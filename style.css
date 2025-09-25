@@ -1,0 +1,85 @@
+/* Your provided CSS applied */
+* {
+    box-sizing: border-box !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body {
+    font-family: Nunito, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #6a6a6a;
+    background: #fff;
+    line-height: 1.65;
+    margin: 0;
+}
+header, section, footer {
+    padding: 20px;
+}
+header {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+}
+header .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Slideshow */
+.Slideshow__Carousel {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+.Slideshow__Image {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 0;
+}
+.Slideshow__Image.active {
+    opacity: 1;
+}
+
+/* Section Images */
+section img {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Skills */
+.skills span {
+    display: inline-block;
+    background: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px 5px 0 0;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: white;
+}
